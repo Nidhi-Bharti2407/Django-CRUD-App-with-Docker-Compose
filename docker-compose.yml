@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: bhartinidhi/djangoapp:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./static:/app/static
+      - ./media:/app/media
+
+
