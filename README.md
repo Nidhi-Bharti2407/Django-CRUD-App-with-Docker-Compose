@@ -1,6 +1,6 @@
 ## A Simple Project of Django CRUD (Create, Retrieve, Update and Delete) Application Using Dockerfile and docker compose file
 
-### some snapshots as a result of this project
+### some snapshots as a result of this project:
 
 Here is some snapshots as a result:
 <h1 align="center">
