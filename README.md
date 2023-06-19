@@ -4,34 +4,12 @@
 
 ![task_crud](task_crud.gif)
 
-### Step 1: create a task app and add it to INSTALLED_APPS
+### Step 1: setup Django project in windows
 
-First of all, use `python manage.py startapp tasks` to create a new app named "tasks" and then add it to INSTALLED_APPS in `settings.py`.
+First of all, use `python -m venv venv` to create a "virtual environment" and then activate the virtual environment in your directory `venv\Scripts\activate`.
 
-```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'tasks',
-]
-```
-
-Then add app urls to project urls.
-
-```python
-from django.contrib import admin
-from django.urls import path, include
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('tasks/', include('tasks.urls'))
-]
-
-```
+Then install Django `pip install django`.
+Afterthat Create a project `django-admin startproject myproject`.
 
 ### Step 2:  create Task model and associated form
 
