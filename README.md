@@ -41,7 +41,7 @@ when image is successfully build then push this image on docker hub
 
 ### Step 3:  create a docker compose for deploy and pull this image from docker hub
 
-`docker compose up -d`
+`docker-compose up -d`
 
 
 
