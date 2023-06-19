@@ -23,6 +23,8 @@ Then install Django `pip install django`.
 
 Afterthat Create a project `django-admin startproject myproject`.
 
+And then create a task app `python manage.py startapp tasks`.
+
 Run this project and test it 
 
 ```
