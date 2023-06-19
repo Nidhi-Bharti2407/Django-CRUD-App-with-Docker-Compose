@@ -4,13 +4,13 @@
 
 Here is some snapshots as a result:
 <h1 align="center">
-<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot01.png" width = 500px></picture> <br>
+<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot01.png" width = 2000px></picture> <br>
  
-<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/Screenshot02.png" width = 500px></picture> <br>
+<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot02.png" width = 2000px></picture> <br>
  
-<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/Screenshot03.png" width = 500px></picture> <br>
+<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot03.png" width = 2000px></picture> <br>
  
-<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/Screenshot04.png" width = 500px></picture> <br>
+<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot04.png" width = 2000px></picture> <br>
  
   </h1>
 
