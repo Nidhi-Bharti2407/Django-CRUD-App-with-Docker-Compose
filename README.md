@@ -11,6 +11,8 @@
 <picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot03.png" width = 2000px></picture> <br>
  
 <picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot04.png" width = 2000px></picture> <br>
+
+<picture><img src = "https://github.com/Nidhi-Bharti2407/Django-CRUD-App-with-Docker-Compose/blob/master/Screenshot05.png" width = 2000px></picture> <br>
  
   </h1>
 
