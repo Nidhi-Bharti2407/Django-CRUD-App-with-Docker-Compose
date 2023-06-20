@@ -47,6 +47,9 @@ when image is successfully build then push this image on docker hub
 
 ## Django CRUD Application deploy Using Minikube
 
+I have deployed this django crup app with deployment in kubernetes. the deployment.yaml pull image of djangoapp and deploy in deployment
+service in this cluster of kubernetes. I have done autoscaling and autohealing with this djangoapp. There is two pods running in the deployment when any pod of crash or something happens then deployment will automatically create the pods.
+
 ### Step 1: setup Minikube in windows
 
 Install Minikube packages and then start the cluster `minikube start` with docker.
@@ -63,9 +66,13 @@ Afterthat provide a nodeport service for expose this node.
 
 `kubectl expose deployment django-crud-deployment --type=NodePort --port=8080`
 
-we can find and describe the service `kubectl describe services django-crud-deployment`
+we can describe the service for all details nodeports and all `kubectl describe services django-crud-deployment`
 
 we can access this port 'curl <Internal-ip>:<node-port> i.e range between 30000-32767
+
+for finding logs `kubectl logs <podname>`
+
+and for access inside the conatiner `kubectl exec -it <podname> -c <containername> bash`
 
 
 
