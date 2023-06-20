@@ -75,9 +75,7 @@ for finding logs `kubectl logs <podname>`
 
 and for access inside the conatiner `kubectl exec -it <podname> -c <containername> bash`
 
-
-
-
+Expose the web application `http://<public-ip:nodeport>`
 
 
 
