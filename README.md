@@ -69,7 +69,7 @@ Afterthat provide a nodeport service for expose this node.
 
 ### Step 2: Access, Describe and get logs 
 
-we can access this port 'curl <Internal-ip>:<node-port> i.e range between 30000-32767
+we can access this port `curl <Internal-ip>:<node-port>` i.e range between 30000-32767
 
 we can describe the service for all details nodeports and all `kubectl describe services django-crud-deployment`
 
