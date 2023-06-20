@@ -53,7 +53,7 @@ I have deployed this django crup app with kubernetes. the django-crud-deployment
 
 ### Step 1: setup Minikube 
 
-Install Minikube packages and then start the cluster `minikube start` with docker.
+Install Minikube packages and then start the cluster `minikube start --force` with docker.
 
 And we can see nodes and pods just type this command `kubectl get nodes` and `kubectl get pods`
 
