@@ -1,4 +1,4 @@
-## A Simple Project of Django CRUD (Create, Retrieve, Update and Delete) Application Using Dockerfile and docker compose file
+## A Simple Project of Django CRUD (Create, Retrieve, Update and Delete) Application Using Dockerfile and docker compose file And Minikube
 
 ### some snapshots as a result of this project:
 
@@ -45,6 +45,27 @@ when image is successfully build then push this image on docker hub
 
 `docker-compose up -d`
 
+## Django CRUD Application deploy Using Minikube
+
+### Step 1: setup Minikube in windows
+
+Install Minikube packages and then start the cluster `minikube start` with docker.
+
+And we can see nodes and pods just type this command `kubectl get nodes` and `kubectl get pods`
+
+
+
+### Step 2: Create deployment file and apply 
+
+After creating `django-crud-deployment.yaml` apply  this file `kubectl apply -f <filename.yaml>`
+
+Afterthat provide a nodeport service for expose this node. 
+
+`kubectl expose deployment django-crud-deployment --type=NodePort --port=8080`
+
+we can find and describe the service `kubectl describe services django-crud-deployment`
+
+we can access this port 'curl <Internal-ip>:<node-port> i.e range between 30000-32767
 
 
 
