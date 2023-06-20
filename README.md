@@ -51,7 +51,7 @@ when image is successfully build then push this image on docker hub
 
 I have deployed this django crup app with kubernetes. the django-crud-deployment.yaml pull image of djangoapp from dockerhub. I have done autoscaling and autohealing with deployment for this djangoapp. There is two pods running in this deployment when any pod of crash or something happens then deployment will automatically create the pods.
 
-### Step 1: setup Minikube in windows
+### Step 1: setup Minikube 
 
 Install Minikube packages and then start the cluster `minikube start` with docker.
 
