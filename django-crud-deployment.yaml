@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-crud-deployment
+  labels:
+    app: djangoapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: djangoapp
+  template:
+    metadata:
+      labels:
+        app: djangoapp
+    spec:
+      containers:
+      - name: djangoapp
+        image: bhartinidhi/djangoapp:latest
+        ports:
+        - containerPort: 8080
