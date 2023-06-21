@@ -3,3 +3,4 @@ Django==4.2.2
 sqlparse==0.4.4
 typing_extensions==4.6.3
 tzdata==2023.3
+mysqlclient==2.0.3
