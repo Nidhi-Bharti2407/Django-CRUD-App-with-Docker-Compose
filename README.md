@@ -45,7 +45,15 @@ when image is successfully build then push this image on docker hub
 
 ### Step 3:  create a docker compose for deploy and pull this image from docker hub
 
+`docker-compose build`
 `docker-compose up -d`
+
+### Step 4:  access containers and check logs and db login
+
+`docker exec -it <container-name> bash`
+`docker logs <container-name>`
+`mysql -u root -p`
+
 
 ## Django CRUD Application deploy Using Minikube
 
