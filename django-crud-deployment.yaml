@@ -23,13 +23,13 @@ spec:
           image: mysql:latest
           env:
             - name: MYSQL_DATABASE
-              value: your_database_name
+              value: django_crud
             - name: MYSQL_USER
-              value: your_username
+              value: root
             - name: MYSQL_PASSWORD
-              value: your_password
+              value: password
             - name: MYSQL_ROOT_PASSWORD
-              value: your_root_password
+              value: password
           ports:
             - containerPort: 3306
           volumeMounts:
