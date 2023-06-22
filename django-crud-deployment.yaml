@@ -15,7 +15,31 @@ spec:
         app: djangoapp
     spec:
       containers:
-      - name: djangoapp
-        image: bhartinidhi/djangoapp:latest
-        ports:
-        - containerPort: 8080
+        - name: django
+          image: bhartinidhi/djangoapp:v1
+          ports:
+            - containerPort: 8080
+        - name: mysql
+          image: mysql:latest
+          env:
+            - name: MYSQL_DATABASE
+              value: your_database_name
+            - name: MYSQL_USER
+              value: your_username
+            - name: MYSQL_PASSWORD
+              value: your_password
+            - name: MYSQL_ROOT_PASSWORD
+              value: your_root_password
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: static-files
+          emptyDir: {}
+        - name: media-files
+          emptyDir: {}
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pv-claim
